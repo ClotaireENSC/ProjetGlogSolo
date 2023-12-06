@@ -10,11 +10,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProjetContext>();
 
-builder.Services.AddControllers()
-// Prevent circular references when serializing objects to JSON
-    .AddJsonOptions(x =>
-        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
-    );
+builder
+    .Services
+    .AddControllers()
+    // Prevent circular references when serializing objects to JSON
+    .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -9,7 +9,7 @@ public class Document
     public string Auteur { get; set; } = null!; // auteur du document
     public int Stock { get; set; } // stock total dans la médiathèque
     public int Emprunt { get; set; } // nombre de documents empruntés
-    public List<Member> emprunteur { get; set; } = null!; // liste d’identifiants des emprunteurs
+    public List<Member> Emprunteur { get; set; } = null!; // liste d’identifiants des emprunteurs
 
     // Default constructor
     public Document()
