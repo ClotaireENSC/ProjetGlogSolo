@@ -1,4 +1,4 @@
-namespace ApiUniversity.Model;
+namespace ApiProjet.Model;
 
 public class Document
 {

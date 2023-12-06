@@ -1,10 +1,12 @@
-namespace ApiUniversity.Model;
+namespace ApiProjet.Model;
 
 public class Member
 {
-    public int Id { get; set; }
-    public string LastName { get; set; } = null!;
-    public string FirstName { get; set; } = null!;
+    public static int NextId = 0; // Compteur d'identifiant
+
+    public int Id { get; set; } // identifiant unique
+    public string LastName { get; set; } = null!; // Nom de famille
+    public string FirstName { get; set; } = null!; // Prénom
 
     // Default constructor
     public Member() { }
